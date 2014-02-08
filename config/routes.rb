@@ -3,6 +3,11 @@ Carol11DemoApp::Application.routes.draw do
 
   resources :users
 
+  match '/help', to: 'static_pages#help', via: 'get'
+
+  get 'pages/home'
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
