@@ -6,13 +6,13 @@ Carol11DemoApp::Application.routes.draw do
   match '/help', to: 'static_pages#help', via: 'get'
 
   get 'pages/home'
-  root :to => 'pages#home'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+root 'Carol11DemoApp#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
