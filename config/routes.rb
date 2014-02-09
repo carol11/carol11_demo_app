@@ -7,7 +7,7 @@ Carol11DemoApp::Application.routes.draw do
 
   get 'pages/home'
 
-  root :to => 'pages#users'
+  root :to => 'users#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
